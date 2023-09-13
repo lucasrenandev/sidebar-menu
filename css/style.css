@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.bi-list {
+    display: inline-block;
+    color: #fff;
+    font-size: 3.3rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 9.5rem;
+    height: 100vh;
+    background-color: #202020;
+    padding: 4rem 2rem;
+    box-shadow: 5px 0 0 #ff0077;
+    transition: width 0.5s ease;
+}
+.sidebar.open {
+    width: 30rem;
+}
+
+.nav-list {
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.list-item {
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+.list-item:hover {
+    background-color: #ff0077;
+    border-radius: 0.5rem;
+}
+
+.list-item.active {
+    background-color: #ff0077;
+}
+
+.link {
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.text {
+    margin-left: 7rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open .text {
+    margin-left: 4rem;
+    opacity: 1;
+}
